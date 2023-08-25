@@ -6,7 +6,7 @@
 
 ## The project dependencies can be found at the "requirements.txt" file.
 
-## I could not host the web app in a website because of some errors (my web app uses Tensorflow to load the .h5 model, which is probably not supported by Streamlit), however I have provided some screenshots of my web app.
+ I could not host the web app in a website because of some errors (my web app uses Tensorflow to load the .h5 model, which is probably not supported by Streamlit), however I have provided some screenshots of my web app.
 
 ### Home Page of web app
 ![Home Page](https://github.com/priyam-saha-17/Customer-Churn-Predictor-App/blob/main/homepage.png)
