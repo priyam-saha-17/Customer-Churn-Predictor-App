@@ -7,17 +7,17 @@ import streamlit as st
 
 #from PIL import Image
 
-pickle_in = open("model.pkl","rb")
-model=pickle.load(pickle_in)
+#pickle_in = open("model.pkl","rb")
+#model=pickle.load(pickle_in)
 
 
 
 
 
-#import tensorflow as tf
+import tensorflow as tf
 
 # Load the model
-#model = tf.keras.models.load_model("C:/Users\PRIYAM SAHA\Desktop\PROJECTS\SunbaseData Assignment\model.h5")
+model = tf.keras.models.load_model("C:/Users\PRIYAM SAHA\Desktop\PROJECTS\SunbaseData Assignment\model.h5")
 
 
 
@@ -68,8 +68,8 @@ def predict(Age, Gender, Location, Subscription_Length_Months, Monthly_Bill, Tot
     
     
     prediction=model.predict([[Age, Gender, Location, Subscription_Length_Months, Monthly_Bill, Total_Usage_GB]])
-    #print(prediction[0][0])
-    if prediction >= 0.5:
+    print(prediction[0][0])
+    if prediction[0][0] >= 0.5:
         result = 1
     else:
         result = 0
